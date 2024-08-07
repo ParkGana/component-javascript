@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/button.css" />
         <link rel="stylesheet" href="../css/select-box.css" />
+        <link rel="stylesheet" href="../css/follow-cursor.css" />
         <script src="../js/common.js"></script>
         <script src="../js/button.js"></script>
         <script src="../js/select-box.js"></script>
+        <script src="../js/follow-cursor.js"></script>
     </head>
     <body>
         <!-- ELEMENT -->
@@ -86,11 +88,28 @@
             </div>
         </div>
 
+        <!-- ANIMATION -->
+        <div class="category-container">
+            <p class="category-title">ANIMATION</p>
+            <div class="category-contents">
+                <!-- FOLLOW CURSOR -->
+                <div class="item-container">
+                    <p class="item-title">FOLLOW CURSOR</p>
+                    <div class="item-contents">
+                        <div id="follow-cursor-area" class="follow-cursor-area">
+                            <div id="follow-cursor-circle" class="follow-cursor-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
             window.onload = () => {
                 CommonEvent()
                 ButtonEvent()
                 SelectBoxEvent()
+                FollowCursorEvent()
             }
         </script>
     </body>
