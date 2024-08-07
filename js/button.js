@@ -4,10 +4,10 @@ function ButtonEvent() {
     const itemContents = document.getElementById('button-contents')
     const infoContents = document.getElementById('button-info-contents')
 
-    // button 태그로 생성한 버튼 element
+    // button 태그로 생성한 BUTTON
     const buttonTag = document.querySelector('.button.button-tag')
 
-    // div 태그로 생성한 버튼 element
+    // div 태그로 생성한 BUTTON
     const divTag = document.querySelector('.button.div-tag')
 
     /****************************************************************************************************/
@@ -18,13 +18,13 @@ function ButtonEvent() {
         infoContents.style.display = getComputedStyle(infoContents).display === 'none' ? 'grid' : 'none'
     })
 
-    /* button 태그로 생성한 버튼 클릭 이벤트 */
+    /* button 태그로 생성한 BUTTON 클릭 이벤트 */
     buttonTag.addEventListener('click', () => {
         alert('버튼이 클릭되었습니다.')
         console.log('button 태그로 생성한 버튼이 클릭되었습니다.')
     })
 
-    /* div 태그로 생성한 버튼 클릭 이벤트 */
+    /* div 태그로 생성한 BUTTON 클릭 이벤트 */
     divTag.addEventListener('click', () => {
         alert('버튼이 클릭되었습니다.')
         console.log('div 태그로 생성한 버튼이 클릭되었습니다.')

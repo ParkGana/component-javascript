@@ -4,10 +4,10 @@ function SelectBoxEvent() {
     const itemContents = document.getElementById('select-contents')
     const infoContents = document.getElementById('select-info-contents')
 
-    // select 태그로 생성한 Select Box element
+    // select 태그로 생성한 SELECT BOX
     const selectTag = document.querySelector('.select.select-tag')
 
-    // div 태그로 생성한 Select Box element
+    // div 태그로 생성한 SELECT BOX
     const divTag = document.querySelector('.select.div-tag')
     const selected = document.querySelector('.select-div-tag.text')
     const arrow = document.querySelector('.select-div-tag.arrow')
@@ -22,12 +22,12 @@ function SelectBoxEvent() {
         infoContents.style.display = getComputedStyle(infoContents).display === 'none' ? 'grid' : 'none'
     })
 
-    /* select 태그로 생성한 Select Box 선택 이벤트 */
+    /* select 태그로 생성한 SELECT BOX 선택 이벤트 */
     selectTag.addEventListener('change', () => {
         console.log(`${selectTag.options[selectTag.selectedIndex].text}가 선택되었습니다.`)
     })
 
-    /* div 태그로 생성한 Select Box 클릭 이벤트 */
+    /* div 태그로 생성한 SELECT BOX 클릭 이벤트 */
     divTag.addEventListener('click', () => {
         arrow.src = `../resource/icon/select-${getComputedStyle(option).display === 'none' ? 'up' : 'down'}.png`
         option.style.display = getComputedStyle(option).display === 'none' ? 'block' : 'none'
@@ -37,7 +37,7 @@ function SelectBoxEvent() {
         })
     })
 
-    /* div 태그로 생성한 Select Box 외부 영역 클릭 이벤트 */
+    /* div 태그로 생성한 SELECT BOX 외부 영역 클릭 이벤트 */
     window.addEventListener('click', (e) => {
         if (!e.target.classList.contains('select-div-tag')) {
             arrow.src = '../resource/icon/select-down.png'
@@ -45,7 +45,7 @@ function SelectBoxEvent() {
         }
     })
 
-    /* div 태그로 생성한 Select Box 선택 이벤트 */
+    /* div 태그로 생성한 SELECT BOX 선택 이벤트 */
     optionList.forEach((item) => {
         item.addEventListener('click', () => {
             selected.innerText = item.innerText
