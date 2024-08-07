@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="../css/responsive.css" />
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/button.css" />
+        <link rel="stylesheet" href="../css/select-box.css" />
         <script src="../js/common.js"></script>
         <script src="../js/button.js"></script>
+        <script src="../js/select-box.js"></script>
     </head>
     <body>
         <!-- ELEMENT -->
@@ -35,6 +37,52 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- SELECT BOX -->
+                <div class="item-container">
+                    <img id="select-info-icon" class="item-info-icon" src="../resource/icon/info.png" />
+                    <p class="item-title">SELECT BOX</p>
+                    <div id="select-contents" class="item-contents">
+                        <select class="select select-tag" name="KBO">
+                            <option disabled selected>응원하는 구단을 선택해 주세요.</option>
+                            <option value="KIA">기아 타이거즈</option>
+                            <option value="DOOSAN">두산 베어스</option>
+                            <option value="LOTTE">롯데 자이언츠</option>
+                            <option value="SAMSUNG">삼성 라이온즈</option>
+                            <option value="KIWOOM">키움 히어로즈</option>
+                            <option value="HANWHA">한화 이글스</option>
+                            <option value="KT">KT 위즈</option>
+                            <option value="LG">LG 트윈스</option>
+                            <option value="NC">NC 다이노스</option>
+                            <option value="SSG">SSG 랜더스</option>
+                        </select>
+                        <div class="select div-tag select-div-tag">
+                            <p class="select-div-tag text">응원하는 구단을 선택해 주세요.</p>
+                            <img class="select-div-tag arrow" src="../resource/icon/select-down.png" />
+                            <div class="select-div-tag option">
+                                <div class="select-div-tag option-item">기아 타이거즈</div>
+                                <div class="select-div-tag option-item">두산 베어스</div>
+                                <div class="select-div-tag option-item">롯데 자이언츠</div>
+                                <div class="select-div-tag option-item">삼성 라이온즈</div>
+                                <div class="select-div-tag option-item">키움 히어로즈</div>
+                                <div class="select-div-tag option-item">한화 이글스</div>
+                                <div class="select-div-tag option-item">KT 위즈</div>
+                                <div class="select-div-tag option-item">LG 트윈스</div>
+                                <div class="select-div-tag option-item">NC 다이노스</div>
+                                <div class="select-div-tag option-item">SSG 랜더스</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="select-info-contents" class="item-info-contents">
+                        <p class="item-info-contents-main">
+                            SELECT BOX 컴포넌트는 select, div 등의 태그를 사용하여 생성할 수 있다.
+                        </p>
+                        <ul class="item-info-contents-sub">
+                            <li>select 태그와 함께 사용되는 option 태그는 스타일 적용이 제한적</li>
+                            <li>div 태그는 스타일적인 커스터마이징이 필요한 경우 사용</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -42,6 +90,7 @@
             window.onload = () => {
                 CommonEvent()
                 ButtonEvent()
+                SelectBoxEvent()
             }
         </script>
     </body>

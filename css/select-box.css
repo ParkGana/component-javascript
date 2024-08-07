@@ -1,0 +1,61 @@
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../resource/icon/select-down.png') no-repeat center right 10px;
+}
+
+select option[disabled] {
+    display: none;
+}
+
+.select.select-tag {
+    width: 250px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.select.div-tag {
+    width: 228px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 14px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.select-div-tag.text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.select-div-tag.option {
+    position: absolute;
+    top: 40px;
+    left: -1px;
+    right: -1px;
+    display: none;
+    border: 1px solid #000000;
+    z-index: 1;
+}
+
+.select-div-tag.option-item {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.select-div-tag.option-item:hover {
+    background-color: #eeeeee;
+}
