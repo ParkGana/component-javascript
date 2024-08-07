@@ -1,0 +1,25 @@
+.button {
+    width: 150px;
+    border: none;
+    background-color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button.a-tag {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.button.button-tag {
+    padding: 10px;
+}
+
+.button.div-tag {
+    text-align: center;
+    padding: 10px 0;
+}
