@@ -1,0 +1,66 @@
+.accordion-h {
+    width: 280px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.accordion-h-container {
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-h-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.accordion-h-contents {
+    display: none;
+    overflow: hidden;
+}
+
+.accordion-h-contents-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.accordion-v {
+    display: grid;
+    gap: 10px;
+}
+
+.accordion-v-container {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-v-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.accordion-v-contents {
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion-v-contents-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 10px;
+}

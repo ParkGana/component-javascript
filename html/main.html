@@ -8,10 +8,12 @@
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/button.css" />
         <link rel="stylesheet" href="../css/select-box.css" />
+        <link rel="stylesheet" href="../css/accordion.css" />
         <link rel="stylesheet" href="../css/follow-cursor.css" />
         <script src="../js/common.js"></script>
         <script src="../js/button.js"></script>
         <script src="../js/select-box.js"></script>
+        <script src="../js/accordion.js"></script>
         <script src="../js/follow-cursor.js"></script>
     </head>
     <body>
@@ -92,6 +94,56 @@
         <div class="category-container">
             <p class="category-title">ANIMATION</p>
             <div class="category-contents">
+                <!-- ACCORDION HORIZONTAL -->
+                <div class="item-container">
+                    <p class="item-title">ACCORDION (H)</p>
+                    <div class="item-contents">
+                        <div id="accordion-h" class="accordion-h">
+                            <div class="accordion-h-container">
+                                <p class="accordion-h-title">Lorem</p>
+                                <div class="accordion-h-contents">
+                                    <p class="accordion-h-contents-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-h-container">
+                                <p class="accordion-h-title">Lorem</p>
+                                <div class="accordion-h-contents">
+                                    <p class="accordion-h-contents-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACCORDION VERTICAL -->
+                <div class="item-container">
+                    <p class="item-title">ACCORDION (V)</p>
+                    <div class="item-contents">
+                        <div class="accordion-v">
+                            <div class="accordion-v-container">
+                                <p class="accordion-v-title">Lorem</p>
+                                <div class="accordion-v-contents">
+                                    <p class="accordion-v-contents-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-v-container">
+                                <p class="accordion-v-title">Lorem</p>
+                                <div class="accordion-v-contents">
+                                    <p class="accordion-v-contents-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- FOLLOW CURSOR -->
                 <div class="item-container">
                     <p class="item-title">FOLLOW CURSOR</p>
@@ -109,6 +161,8 @@
                 CommonEvent()
                 ButtonEvent()
                 SelectBoxEvent()
+                AccordionHorizontalEvent()
+                AccordionVerticalEvent()
                 FollowCursorEvent()
             }
         </script>
