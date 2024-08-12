@@ -10,11 +10,13 @@
         <link rel="stylesheet" href="../css/select-box.css" />
         <link rel="stylesheet" href="../css/accordion.css" />
         <link rel="stylesheet" href="../css/follow-cursor.css" />
+        <link rel="stylesheet" href="../css/puzzle.css" />
         <script src="../js/common.js"></script>
         <script src="../js/button.js"></script>
         <script src="../js/select-box.js"></script>
         <script src="../js/accordion.js"></script>
         <script src="../js/follow-cursor.js"></script>
+        <script src="../js/puzzle.js"></script>
     </head>
     <body>
         <!-- ELEMENT -->
@@ -153,6 +155,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- PUZZLE -->
+                <div class="item-container">
+                    <p class="item-title">PUZZLE</p>
+                    <div class="item-contents">
+                        <div class="puzzle-container">
+                            <img id="puzzle-1" class="puzzle-image" src="../resource/image/puzzle-2.png" />
+                            <img id="puzzle-2" class="puzzle-image" src="../resource/image/puzzle-4.png" />
+                            <img id="puzzle-3" class="puzzle-image" src="../resource/image/puzzle-1.png" />
+                            <img id="puzzle-4" class="puzzle-image" src="../resource/image/puzzle-3.png" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -164,6 +179,7 @@
                 AccordionHorizontalEvent()
                 AccordionVerticalEvent()
                 FollowCursorEvent()
+                PuzzleEvent()
             }
         </script>
     </body>
