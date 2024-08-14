@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/button.css" />
         <link rel="stylesheet" href="../css/check-box.css" />
+        <link rel="stylesheet" href="../css/radio.css" />
         <link rel="stylesheet" href="../css/select-box.css" />
         <link rel="stylesheet" href="../css/accordion.css" />
         <link rel="stylesheet" href="../css/follow-cursor.css" />
@@ -15,6 +16,7 @@
         <script src="../js/common.js"></script>
         <script src="../js/button.js"></script>
         <script src="../js/check-box.js"></script>
+        <script src="../js/radio.js"></script>
         <script src="../js/select-box.js"></script>
         <script src="../js/accordion.js"></script>
         <script src="../js/follow-cursor.js"></script>
@@ -109,6 +111,45 @@
                             <li>input 태그는 스타일 적용이 제한적</li>
                             <li>스타일적인 커스터마이징이 필요한 경우 input 태그가 아닌 label 태그에 적용</li>
                         </ul>
+                    </div>
+                </div>
+
+                <!-- RADIO -->
+                <div class="item-container">
+                    <p class="item-title">RADIO</p>
+                    <div class="item-contents">
+                        <div class="radio-area">
+                            <div class="radio-container">
+                                <input
+                                    type="radio"
+                                    class="radio-input"
+                                    id="radio-input-1"
+                                    name="radio-input"
+                                    value="글램핑"
+                                />
+                                <label class="radio-label-text" for="radio-input-1">글램핑</label>
+                            </div>
+                            <div class="radio-container">
+                                <input
+                                    type="radio"
+                                    class="radio-input"
+                                    id="radio-input-2"
+                                    name="radio-input"
+                                    value="오토"
+                                />
+                                <label class="radio-label-text" for="radio-input-2">오토</label>
+                            </div>
+                            <div class="radio-container">
+                                <input
+                                    type="radio"
+                                    class="radio-input"
+                                    id="radio-input-3"
+                                    name="radio-input"
+                                    value="카라반"
+                                />
+                                <label class="radio-label-text" for="radio-input-3">카라반</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -244,6 +285,7 @@
                 CommonEvent()
                 ButtonEvent()
                 CheckBoxEvent()
+                RadioEvent()
                 SelectBoxEvent()
                 AccordionHorizontalEvent()
                 AccordionVerticalEvent()
