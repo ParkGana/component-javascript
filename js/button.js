@@ -21,12 +21,12 @@ function ButtonEvent() {
     /* button 태그로 생성한 BUTTON 클릭 이벤트 */
     buttonTag.addEventListener('click', () => {
         alert('버튼이 클릭되었습니다.')
-        console.log('button 태그로 생성한 버튼이 클릭되었습니다.')
+        console.log('button 태그로 생성한 버튼 클릭되었습니다.')
     })
 
     /* div 태그로 생성한 BUTTON 클릭 이벤트 */
     divTag.addEventListener('click', () => {
         alert('버튼이 클릭되었습니다.')
-        console.log('div 태그로 생성한 버튼이 클릭되었습니다.')
+        console.log('div 태그로 생성한 버튼 클릭되었습니다.')
     })
 }

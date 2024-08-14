@@ -24,7 +24,7 @@ function SelectBoxEvent() {
 
     /* select 태그로 생성한 SELECT BOX 선택 이벤트 */
     selectTag.addEventListener('change', () => {
-        console.log(`${selectTag.options[selectTag.selectedIndex].text}가 선택되었습니다.`)
+        console.log(`${selectTag.options[selectTag.selectedIndex].text} 선택되었습니다.`)
     })
 
     /* div 태그로 생성한 SELECT BOX 클릭 이벤트 */
@@ -49,7 +49,7 @@ function SelectBoxEvent() {
     optionList.forEach((item) => {
         item.addEventListener('click', () => {
             selected.innerText = item.innerText
-            console.log(`${item.innerText}가 선택되었습니다.`)
+            console.log(`${item.innerText} 선택되었습니다.`)
         })
     })
 }
