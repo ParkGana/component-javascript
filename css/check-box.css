@@ -8,11 +8,14 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, auto);
-    gap: 5px;
 }
 
 .check-input {
     display: none;
+}
+
+.check-label-design {
+    cursor: pointer;
 }
 
 .check-input + .check-label-design {
@@ -42,4 +45,6 @@ input[class='check-input']:checked + label[class='check-label-design']::after {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    padding-left: 5px;
+    cursor: pointer;
 }
