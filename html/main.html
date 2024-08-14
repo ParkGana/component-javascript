@@ -2,17 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>COMPONENT</title>
+        <title>JAVASCRIPT</title>
         <link rel="stylesheet" href="../css/font.css" />
         <link rel="stylesheet" href="../css/responsive.css" />
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/button.css" />
+        <link rel="stylesheet" href="../css/check-box.css" />
         <link rel="stylesheet" href="../css/select-box.css" />
         <link rel="stylesheet" href="../css/accordion.css" />
         <link rel="stylesheet" href="../css/follow-cursor.css" />
         <link rel="stylesheet" href="../css/puzzle.css" />
         <script src="../js/common.js"></script>
         <script src="../js/button.js"></script>
+        <script src="../js/check-box.js"></script>
         <script src="../js/select-box.js"></script>
         <script src="../js/accordion.js"></script>
         <script src="../js/follow-cursor.js"></script>
@@ -40,6 +42,72 @@
                             <li>a 태그는 페이지 이동 및 링크 연결이 필요한 경우 사용</li>
                             <li>button 태그는 페이지 내에서의 인터페이스 조작이 필요한 경우 사용</li>
                             <li>div 태그는 스타일적인 커스터마이징이 필요한 경우 사용</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CHECK BOX -->
+                <div class="item-container">
+                    <img id="check-info-icon" class="item-info-icon" src="../resource/icon/info.png" />
+                    <p class="item-title">CHECK BOX</p>
+                    <div id="check-contents" class="item-contents">
+                        <div class="check-area">
+                            <div class="check-container">
+                                <input type="checkbox" id="input-glamping" name="input-camping" value="글램핑" />
+                                <label class="check-label-text" for="input-glamping">글램핑</label>
+                            </div>
+                            <div class="check-container">
+                                <input type="checkbox" id="input-auto" name="input-camping" value="오토" />
+                                <label class="check-label-text" for="input-auto">오토</label>
+                            </div>
+                            <div class="check-container">
+                                <input type="checkbox" id="input-caravan" name="input-camping" value="카라반" />
+                                <label class="check-label-text" for="input-caravan">카라반</label>
+                            </div>
+                        </div>
+                        <div class="check-area">
+                            <div class="check-container">
+                                <input
+                                    class="check-input"
+                                    type="checkbox"
+                                    id="label-glamping"
+                                    name="label-camping"
+                                    value="글램핑"
+                                />
+                                <label class="check-label-design" for="label-glamping"></label>
+                                <label class="check-label-text" for="label-glamping">글램핑</label>
+                            </div>
+                            <div class="check-container">
+                                <input
+                                    class="check-input"
+                                    type="checkbox"
+                                    id="label-auto"
+                                    name="label-camping"
+                                    value="오토"
+                                />
+                                <label class="check-label-design" for="label-auto"></label>
+                                <label class="check-label-text" for="label-auto">오토</label>
+                            </div>
+                            <div class="check-container">
+                                <input
+                                    class="check-input"
+                                    type="checkbox"
+                                    id="label-caravan"
+                                    name="label-camping"
+                                    value="카라반"
+                                />
+                                <label class="check-label-design" for="label-caravan"></label>
+                                <label class="check-label-text" for="label-caravan">카라반</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="check-info-contents" class="item-info-contents">
+                        <p class="item-info-contents-main">
+                            CHECK BOX 컴포넌트는 input 태그를 사용하여 생성할 수 있다.
+                        </p>
+                        <ul class="item-info-contents-sub">
+                            <li>input 태그는 스타일 적용이 제한적</li>
+                            <li>스타일적인 커스터마이징이 필요한 경우 input 태그가 아닌 label 태그에 적용</li>
                         </ul>
                     </div>
                 </div>
@@ -175,6 +243,7 @@
             window.onload = () => {
                 CommonEvent()
                 ButtonEvent()
+                CheckBoxEvent()
                 SelectBoxEvent()
                 AccordionHorizontalEvent()
                 AccordionVerticalEvent()

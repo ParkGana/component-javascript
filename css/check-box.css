@@ -1,0 +1,45 @@
+.check-area {
+    display: grid;
+    grid-template-columns: repeat(3, fit-content(200px));
+    gap: 20px;
+}
+
+.check-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+}
+
+.check-input {
+    display: none;
+}
+
+.check-input + .check-label-design {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #91979d;
+}
+
+input[class='check-input']:checked + label[class='check-label-design']::after {
+    content: '✔';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #91979d;
+    font-size: 8px;
+    font-weight: 900;
+    line-height: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.check-label-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
