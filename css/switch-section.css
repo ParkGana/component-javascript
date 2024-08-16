@@ -1,0 +1,27 @@
+.switch-section-area {
+    width: 280px;
+    height: 200px;
+    position: relative;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+.switch-section-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.switch-section-page {
+    width: 280px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #000000;
+}
