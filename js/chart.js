@@ -71,6 +71,36 @@ function ChartEvent() {
 
     /****************************************************************************************************/
 
+    let doughnut = document.getElementById('chart-doughnut')
+
+    new Chart(doughnut, {
+        type: 'doughnut',
+        data: {
+            labels: ['A', 'B', 'C'],
+            datasets: [
+                {
+                    data: [30, 17, 53],
+                    backgroundColor: ['rgba(255, 0, 0, 0.3)', 'rgba(0, 255, 0, 0.3)', 'rgba(0, 0, 255, 0.3)']
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: false,
+                    text: 'Doughnut Chart Title'
+                },
+                legend: {
+                    display: false,
+                    position: 'top'
+                }
+            }
+        }
+    })
+
+    /****************************************************************************************************/
+
     let line = document.getElementById('chart-line')
 
     new Chart(line, {
