@@ -11,7 +11,7 @@ function FollowCursorEvent() {
     areaLeft = area.getBoundingClientRect().left
 
     /* 화면 크기 변경 이벤트 */
-    window.addEventListener('resize', (e) => {
+    window.addEventListener('resize', () => {
         areaTop = area.getBoundingClientRect().top
         areaLeft = area.getBoundingClientRect().left
     })
